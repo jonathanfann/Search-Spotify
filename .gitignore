@@ -2,13 +2,8 @@
 .tmp/
 .DS_Store
 .idea
-*.sublime-project
-*.sublime-workspace
 bower_components/
 node_modules/
-/pages/
-/docs/
-/test/coverage/
 !.gitignore
-!dist/
 npm-debug.log
+Procfile
