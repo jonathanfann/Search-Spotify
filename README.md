@@ -1,4 +1,4 @@
-# Original project forked from https://github.com/eddiemoore/angular-spotify
+# Search Spotify 
 
 Search Spotify is an app that allows searching an artist on Spotify and returns a unique route for the artist's top tracks, albums, and related artists with a custom designed website utilizing the API to return images/links/urls.
 
