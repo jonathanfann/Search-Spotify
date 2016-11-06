@@ -1,12 +1,10 @@
-<div class="content" id="search" ng-hide="artistAlbums">
+<div class="content" id="search">
   <div class="row">
-    <div class="col-xs-12" ng-show="loggedIn">
-      <h1>Log in to see all the cool features!</h1>
-    </div>
-    <div class="col-xs-12" ng-hide="loggedIn">
+
+    <div class="col-xs-12">
       <div class="row">
         <div class="col-xs-8 col-xs-offset-2 text-center">
-          <p>Search for artists</p>
+          <h1>Search for artists</h1>
           <br />
           <input class="form-control" type="text" ng-model="searchartist" ng-change="searchArtist()" placeholder="Search for an artist">
           <br />
