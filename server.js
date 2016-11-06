@@ -11,6 +11,6 @@ app.get('/',function(req,res){
   //__dirname : It will resolve to your project folder.
 });
 
-app.listen(8080);
-
-console.log("Running at localhost:8080");
+app.listen(process.env.PORT || 8080, function () {
+  console.log('runnin');
+});
