@@ -1,28 +1,28 @@
 <div ng-init="getArtistAlbums()" class="content" id="artist" ng-show="artistAlbums">
   <button class="btn btn-primary btn-md pull-right" ui-sref="home">&larr; Go Back</button>
-  <h1><a href="{{ artistsAlbums[0].artists[0].href }}">{{ artistAlbums[0].artists[0].name }}</a></h1>
+  <h1><a href="{{ artistStuff.external_urls.spotify }}" target="_blank">{{ artistStuff.name }}</a></h1>
   <hr />
   <div class="row">
   <div class="col-xs-12 col-sm-4">
     <h2>Albums</h2>
     <div ng-repeat="a in artistAlbums | unique:'name' ">
-      <p><a href="{{ a.href }}" target="_blank">{{ a.name }}</a></p>
+      <p><a href="{{ a.external_urls.spotify }}" target="_blank">{{ a.name }}</a></p>
     </div>
   </div>
   <div class="col-xs-12 col-sm-4">
   <h2>Top Tracks</h2>
   <div ng-repeat="t in topTracks.tracks" style="margin-top:10px; margin-bottom:10px;">
-    <p><a href="{{ t.href }}" target="_blank">{{ t.name }}</a>
+    <p><a href="{{ t.external_urls.spotify }}" target="_blank">{{ t.name }}</a>
     <a class="playit" href="{{ t.preview_url }}" target="_blank">&#9654;</a></p>
   </div>
 </div>
   <div class="col-xs-12 col-sm-4">
     <h2>Related Artists</h2>
     <div ng-repeat="r in relatedArtists.artists">
-      <p><a href="{{ r.href }}" target="_blank">{{ r.name }}</a></p>
+      <p><a href="{{ r.external_urls.spotify }}" target="_blank">{{ r.name }}</a></p>
     </div>
   </div>
 </div>
 </div>
-<div style="height:400px; width:100%; background:url({{ artistStuff.images[0].url }}); background-size:cover; background-position:50% 20%;">
+<div style="margin-top:20px; height:400px; width:100%; background:url({{ artistStuff.images[0].url }}); background-size:cover; background-position:50% 20%;">
 </span>
