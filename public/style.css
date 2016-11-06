@@ -44,6 +44,10 @@ h1 {
   padding:30px;
 }
 
+.content {
+  min-height:50vh;
+}
+
 .button {
   border-radius:0 !important;
 }
