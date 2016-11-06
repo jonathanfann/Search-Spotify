@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+html, body {
+  font-family:'Oswald', sans-serif;
+  margin:0;
+  padding:0;
+  background:#E9B7A0;
+  background-image:url(/img/bg.png);
+  background-attachment:fixed;
+  background-size:cover;
+}
+
+h1,h2,h3,h4,h5,h6,ul,li,span,p {
+  font-family:'Oswald', sans-serif;
+}
+
+p {
+  font-size:20px;
+}
+
+.playit {
+  background: rgba(0,0,0,0.3);
+  color: #fff;
+  font-size: 13px;
+  padding: 1px 5px;
+  position:relative;
+  top:-2px;
+  transition: all ease-in-out 0.2s;
+}
+
+.playit:hover, .playit:active, .playit:focus {
+  text-decoration:none;
+  color:#fff;
+  background:rgba(0,0,0,0.5);
+}
+
+h1 {
+  font-size:40px;
+}
+
+#content {
+  min-height:calc(100vh - 80px);
+  background:rgba(256,256,256,0.7);
+  padding:30px;
+}
+
+.button {
+  border-radius:0 !important;
+}
+
+#footer {
+  text-align:center;
+  padding-top:40px;
+  margin-top:40px;
+  border-top:2px dashed orangered;
+}
+
+.content h1:first-child {
+  padding-top:40px;
+}
+
+.artistRow {
+  border-right:5px solid transparent;
+}
+
+.artistRow:hover {
+  cursor:pointer;
+  border-right-color:orangered;
+}
+
+a {
+  color:black;
+  transition:all ease-in-out 0.2s;
+}
+
+a:hover, a:focus, a:active {
+  color:orangered;
+  text-decoration:none;
+}
+
+#nav {
+  padding:20px;
+  background:#333;
+  color:#fff;
+  position:relative;
+  height:80px;
+  width:100%;
+}
+
+#nav .btn {
+  position:absolute;
+  right:20px;
+  top:20px;
+}
+
+#nav img {
+  height:60px;
+  width:auto;
+}

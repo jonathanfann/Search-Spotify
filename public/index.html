@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="mainApp">
+
+<head>
+  <title>Spotify Angular App to do the Stuff</title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-controller="MainCtrl">
+  <div id="nav">
+    <a ui-sref="home"><img src="img/logo.png" /></a>
+    <div class="login" ng-show="loggedIn">
+      <button class="btn btn-md btn-primary" ng-click="login()">Login with Spotify</button>
+    </div>
+  </div>
+  <div id="content" class="ng-cloak">
+    <ui-view></ui-view>
+
+    <div id="footer">
+      <p>&copy; 2016 --- Built by <a href="http://jfann" target="_blank">Jonathan Fann</a></p>
+    </div>
+  </div>
+
+  <script src="src/angular.js"></script>
+  <script src="http://unpkg.com/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="src/angular-spotify.js"></script>
+  <script src="main.controller.js"></script>
+</body>
+
+</html>

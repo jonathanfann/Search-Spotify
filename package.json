@@ -49,5 +49,10 @@
   "bugs": {
     "url": "https://github.com/eddiemoore/angular-spotify/issues"
   },
-  "homepage": "https://github.com/eddiemoore/angular-spotify"
+  "homepage": "https://github.com/eddiemoore/angular-spotify",
+  "dependencies": {
+    "angular-route": "^1.5.8",
+    "express": "^4.14.0",
+    "spotify": "^0.3.0"
+  }
 }

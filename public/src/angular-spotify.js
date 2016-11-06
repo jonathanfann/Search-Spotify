@@ -497,7 +497,7 @@
             var deferred = $q.defer();
             var that = this;
 
-            var w = 400,
+            var w = 300,
                 h = 500,
                 left = (screen.width / 2) - (w / 2),
                 top = (screen.height / 2) - (h / 2);

@@ -1,0 +1,24 @@
+<div class="content" id="search" ng-hide="artistAlbums">
+  <div class="row">
+    <div class="col-xs-12" ng-show="loggedIn">
+      <h1>Log in to see all the cool features!</h1>
+    </div>
+    <div class="col-xs-12" ng-hide="loggedIn">
+      <div class="row">
+        <div class="col-xs-8 col-xs-offset-2 text-center">
+          <p>Search for artists</p>
+          <br />
+          <input class="form-control" type="text" ng-model="searchartist" ng-change="searchArtist()" placeholder="Search for an artist">
+          <br />
+          <div ng-repeat="a in artists">
+            <div class="artistRow" ui-sref="artist({id:a.id})" style="line-height:200px; color:white; width:100%;">
+              <div style="width:100%; background-image:url(' {{a.images[0].url}} '); background-size:cover;">
+                <p style="background:rgba(0,0,0,0.5);">{{a.name}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
